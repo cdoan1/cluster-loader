@@ -1,4 +1,4 @@
-namespace: "zz-content-1-"
+namespace: "zz-cl-content-1"
 
 resources:
 - namespace.yaml
