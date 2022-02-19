@@ -5,6 +5,7 @@ metadata:
   labels:
     app: hello-world
   name: hello-world
+  namespace: zz-cl-content-2
 spec:
   type: NodePort
   ports:
