@@ -1,0 +1,6 @@
+namespace: "zz-cl-content-3"
+
+resources:
+- namespace.yaml
+- deployment.yaml
+- service.yaml
