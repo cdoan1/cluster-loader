@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cl-content-1
+  namespace: openshift-gitops
+spec:
+  destination:
+    server: https://api.appsre-250-3x3node-4x16.demo.red-chesterfield.com:6443
+  project: default
+  source:
+    path: hello-world
+    repoURL: https://github.com/cdoan1/cluster-loader.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
